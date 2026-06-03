@@ -1,0 +1,4 @@
+Select count(a.post_project_id), service_category_id From pogopro_post_project a group by a.service_category_id
+
+reoct14thumb.jpg
+ 

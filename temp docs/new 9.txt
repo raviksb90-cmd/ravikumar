@@ -1,0 +1,14 @@
+05-10-2020
+fixed reala estate datat not showing on faq> reseller owner video (wrong video id was there in faqs links)
+removed spacing above social icon for fsim report page
+
+6-------
+project setup 2 hr html to css 4 hr testing and fixes pogo 2 hr
+
+7------
+dashboard 7 hr      1 hr chat with mark
+
+8------
+popular changes 2h, pogo 3h, timeline 3h.
+9-----
+TIMELINE 6H POGO 2

@@ -1,0 +1,19 @@
+if global off all off
+global on all on >not required
+any of other is set on then make global on
+
+
+remove min plavor 
+
+move red and green to below above negative and add flavor match in text as below
+ 
+below this % is red flavor match 
+above this % is green flavor match
+change" Boost 100 if dietary preference equals or is over
+remove Max boost if free food at this restaurant exceeds above
+
+boost  deietry prefrence  100
+
+---------------------
+11-09-2020 > setup popularhealth 3h> merge 7 files 5h,
+14 and 15-0-2020> add new files 27 files.

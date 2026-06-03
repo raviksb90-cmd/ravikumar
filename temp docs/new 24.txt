@@ -1,0 +1,4 @@
+tar -czvf video_seo_utility10aug.tar.gz /var/www/pogo/
+tar --exclude='*.mp4' --exclude='*.png' --exclude='*.jpg' --exclude='*.pdf' -cvf pogo_backup12oct.tar.gz /var/www/pogo/
+
+Pogo update: working on pogo report feature , add project search screen on home page and display projects for each category. (status ongoing)

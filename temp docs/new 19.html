@@ -1,0 +1,456 @@
+import React, { Component }  from 'react';
+import { render   }  from 'react-dom';
+import AddLibrayModal from "./modals/AddLibray";
+import ProgramsModal from "./modals/Programs";
+import Footer from "../Footer";
+import Navbar from "../Navbar";
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
+const Timeline = (props) => {
+  return (
+    <div className="wrapper">
+    <Navbar />
+<div id="main-panel" className="main-panel">
+   <div className="container mb-5 mt-5">
+      <div className="topfilters">
+         <div className="topfil">
+            <div className="row">
+               <div className="col mb-2">
+                  <div className="search-container">
+                     <input type="text" placeholder="Find Media.." />
+                     <button type="button"><i className="fa fa-search"></i></button>
+                  </div>
+               </div>
+               <div className="col mb-2">
+                  <div className="dropdown">
+                     <button className="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style={{color: "#fff"}}>All Media
+                     <span className="caret"></span></button>
+                     <ul className="dropdown-menu">
+                        <li><a href="#">Media Files</a></li>
+                        <li><a href="#">Live Streams</a></li>
+                        <li><a href="#">Locally Generated Content</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div className="col-md-5 col-12 mb-2">
+                  <span>Jump to</span>
+                  <span className="dropdown">
+                     <button className="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style={{
+                        border: "1px solid #aaa"}}>Today
+                     <span className="caret"></span></button>
+                     <ul className="dropdown-menu">
+                        <li><a href="#">Yesterday</a></li>
+                        <li><a href="#">Today</a></li>
+                        <li><a href="#">Tomorrow</a></li>
+                     </ul>
+                  </span>
+                  <span className="dropdown">
+                     <button className="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style={{
+                        border: "1px solid #aaa"
+                        }}>Now
+                     <span className="caret"></span></button>
+                     <ul className="dropdown-menu">
+                        <li><a href="#">12:00AM</a></li>
+                        <li><a href="#">1:00Am</a></li>
+                        <li><a href="#">2:00AM</a></li>
+                     </ul>
+                  </span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div className="month">
+         <ul>
+            <li className="prev">❮</li>
+            <li className="next">❯</li>
+            <li>
+               September 23,
+               <br/>
+               <span style={{"font-size":"18px"}}>2020</span>
+            </li>
+         </ul>
+      </div>
+      <div className="row">
+         <div className="col-3 pr-0">
+            <table className="grid" cellspacing="0">
+               <tr style={{height: "67px"}}>
+                  <td>
+                     <div className="row" style={{display: "flex"}}>
+                        <div className="col-md-1">
+                           <button type="button" className="btn-simple btn-xs btn"><i className="fa fa-plus"></i></button>
+                        </div>
+                        <div className="col-md-8 slidecontainer">  <input type="range" min="1" max="100" value="50" /></div>
+                        <div className="col-md-1">
+                           <button type="button" className="btn-simple btn-xs btn"><i className="fa fa-minus"></i></button>
+                        </div>
+                     </div>
+                  </td>
+               </tr>
+               <tr>
+                  <td className="chanel-name">Media 1</td>
+               </tr>
+               <tr>
+                  <td className="chanel-name">Media 2</td>
+               </tr>
+               <tr>
+                  <td className="chanel-name">Media 3</td>
+               </tr>
+               <tr>
+                  <td className="chanel-name">Media 4</td>
+               </tr>
+            </table>
+         </div>
+         <div className="col-9 pl-0">
+            <div className="table-responsive" style={{"display": "block"}}>
+      <TransformWrapper>
+              {({ zoomIn, zoomOut, resetTransform, ...rest }) => (
+          <React.Fragment>
+            <div className="tools">
+              <button onClick={zoomIn}>+</button>
+              <button onClick={zoomOut}>-</button>
+              <button onClick={resetTransform}>x</button>
+            </div>
+        <TransformComponent>
+               <table className="grid" cellspacing="0">
+                  <tbody>
+                     <tr>
+                        <td className="td-border">00:00</td>
+                        <td className="td-border">01:00</td>
+                        <td className="td-border">02:00</td>
+                        <td className="td-border">03:00</td>
+                        <td className="td-border">04:00</td>
+                        <td className="td-border">05:00</td>
+                        <td className="td-border">06:00</td>
+                        <td className="td-border">07:00</td>
+                        <td className="td-border">08:00</td>
+                        <td className="td-border">09:00</td>
+                        <td className="td-border">10:00</td>
+                        <td className="td-border">11:00</td>
+                        <td className="td-border">12:00</td>
+                        <td className="td-border">13:00</td>
+                        <td className="td-border">14:00</td>
+                        <td className="td-border">15:00</td>
+                        <td className="td-border">16:00</td>
+                        <td className="td-border">17:00</td>
+                        <td className="td-border">18:00</td>
+                        <td className="td-border">19:00</td>
+                        <td className="td-border">20:00</td>
+                        <td className="td-border">21:00</td>
+                        <td className="td-border">22:00</td>
+                        <td className="td-border">23:00</td>
+                        <td className="td-border">24:00</td>
+                     </tr>
+                     <tr>
+                        <td colspan="25" style={{padding: 0, "borderTop": 0}}>
+                           <div className="TL">
+                              <div className="TL-scroll">
+                                 <div className="TL-row TL-row--top">
+                                    <div className="TL-rowName"></div>
+                                    <div className="TL-rowRuler"></div>
+                                    <div className="TL-rowCells"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal2"><span className="badge badge-pill media1">Title will come here</span></a><a href="#" data-toggle="modal" data-target="#myModal2"><span className="badge badge-pill http">Title will come here</span></a></td>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal2"><span className="badge badge-pill recd">Title will come here</span></a><a href="#" data-toggle="modal" data-target="#myModal2"><span className="badge badge-pill http">Title will come here</span></a></td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal2"><span className="badge badge-pill media1">Title will come here</span></a><a href="#" data-toggle="modal" data-target="#myModal2"><span className="badge badge-pill http">Title will come here</span></a></td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal2"><span className="badge badge-pill srt">Title will come here</span></a></td>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal2"><span className="badge badge-pill media1">Title will come here</span></a><a href="#" data-toggle="modal" data-target="#myModal2"><span className="badge badge-pill http">Title will come here</span></a></td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                     </tr>
+
+                                          <tr>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal2"><span className="badge badge-pill media1">Title will come here</span></a><a href="#" data-toggle="modal" data-target="#myModal2"><span className="badge badge-pill http">Title will come here</span></a></td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal2"><span className="badge badge-pill srt">Title will come here</span></a></td>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal2"><span className="badge badge-pill media1">Title will come here</span></a><a href="#" data-toggle="modal" data-target="#myModal2"><span className="badge badge-pill http">Title will come here</span></a></td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                     </tr>
+                                          <tr>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal2"><span className="badge badge-pill media1">Title will come here</span></a><a href="#" data-toggle="modal" data-target="#myModal2"><span className="badge badge-pill http">Title will come here</span></a></td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal2"><span className="badge badge-pill srt">Title will come here</span></a></td>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal2"><span className="badge badge-pill media1">Title will come here</span></a><a href="#" data-toggle="modal" data-target="#myModal2"><span className="badge badge-pill http">Title will come here</span></a></td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                     </tr>
+                                          <tr>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal2"><span className="badge badge-pill media1">Title will come here</span></a><a href="#" data-toggle="modal" data-target="#myModal2"><span className="badge badge-pill http">Title will come here</span></a></td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal2"><span className="badge badge-pill srt">Title will come here</span></a></td>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal2"><span className="badge badge-pill media1">Title will come here</span></a><a href="#" data-toggle="modal" data-target="#myModal2"><span className="badge badge-pill http">Title will come here</span></a></td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                        <td className="timeline-td-box" > 
+                           <button type="button" className="btn" data-toggle="modal" data-target="#myModal" ></button>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+                       </TransformComponent>
+                       </React.Fragment>
+                       )}
+            </TransformWrapper>
+            </div>
+                  
+
+         </div>
+      </div>
+   </div>
+<AddLibrayModal />
+<ProgramsModal />
+
+  <Footer/>
+</div>
+</div>
+  );
+};
+export default Timeline;

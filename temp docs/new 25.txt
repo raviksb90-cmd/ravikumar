@@ -1,0 +1,24 @@
+16664 3h
+16830 5h
+16833 
+
+
+16664 2h (fix-location input on enter not working) done
+16444 add setting in admin (algo the mam will do).(added 4 settings in admin master data) 4h
+16946 3h social share pintrest
+pogo chat 0.5h
+
+
+16917 from yesterday
+15976 5 done (regarding this issue, first implemented code to switch on all notfication buttons if global is switched on,, after this mam asked not to add this code and do the ui part btn alignmnet of global btn with respect to other btns)
+16444 0.5h(fix for "settings value not showing after save") 
+17009 
+
+
+
+
+
+
+
+if 
+

@@ -1,0 +1,209 @@
+<div className="content-wrapper">
+         <div className="container">                
+             
+             <div className="row">
+			<div className="col-md-12 col-sm-12 col-xs-12">
+               <div className="panel panel-primary">
+                        <div className="panel-heading">
+                           Media Content
+                        </div>
+                        <div className="panel-body">
+                             <form className="form-horizontal" style={{"padding-top":"33px"}}>	
+    <div className="form-group row">
+        <label for="" className="col-sm-3 col-form-label">Select Media Type:</label>
+        <div className="col-sm-9">
+            
+ 	<select name="type" className="form-control custom-select">
+  <option value="media">Media Files</option>
+  <option value="stream">Live Streams</option>
+  <option value="local">Locally Generated Content</option>
+</select>
+<br />
+<select name="filetype" className="form-control custom-select">
+  <option value="3">Imported Media</option>
+  <option value="5">Http ts Files</option>  
+  <option value="7"></option>  
+</select>
+
+        </div>
+    </div>		 
+    <div className="form-group row">
+        <label for="" className="col-sm-3 col-form-label">Interface:</label>
+        <div className="col-sm-9">
+            
+ <select name="interface" className="form-control custom-select">
+ 
+</select>
+
+        </div>
+    </div> 
+	<div className="form-group row">
+        <label for="" className="col-sm-3 col-form-label">IP Address:</label>
+        <div className="col-sm-9">
+            <input type="title" className="form-control" id="title" placeholder="Enter IP">
+        </div>
+    </div>
+	<div className="form-group row">
+        <label for="" className="col-sm-3 col-form-label">Port:</label>
+        <div className="col-sm-9">
+            <input type="title" className="form-control" id="title" placeholder="Enter Port">
+        </div>
+    </div>
+	<div className="form-group row">
+        <label for="" className="col-sm-3 col-form-label">SSM IP Address:</label>
+        <div className="col-sm-9">
+            <input type="title" className="form-control" id="title" placeholder="Enter SSM IP">
+        </div>
+    </div>	
+	<div className="form-group row">
+        <label for="" className="col-sm-3 col-form-label">TTL:</label>
+        <div className="col-sm-9">
+            <input type="title" className="form-control" id="title" placeholder="32">
+        </div>
+    </div>
+    <div className="form-group row">
+        <label for="" className="col-sm-3 col-form-label">Media Title:</label>
+        <div className="col-sm-9">
+            <input type="title" className="form-control" id="title" placeholder="Video Title">
+        </div>
+    </div>
+
+	 <div className="form-group row">
+        <label for="" className="col-sm-3 col-form-label">Import File:</label>
+        <div className="col-sm-9">
+        <div className="custom-file">
+    <input type="file" className="custom-file-input" id="customFile">
+   
+  </div>
+
+        </div>
+		
+    </div>
+		<div className="form-group row">
+        <label for="" className="col-sm-3 col-form-label">Input Video codec/bitrate and resolution:</label>
+        <div className="col-sm-9">
+		<div className="row">
+            <div className="col-md-3">
+            <input type="title" className="form-control" id="title" placeholder="Codec">
+        </div>
+		<div className="col-md-3">
+            <input type="title" className="form-control" id="title" placeholder="Bitrate">
+        </div>
+		<div className="col-md-3">
+            <input type="title" className="form-control" id="title" placeholder="Resolution">
+        </div>
+		</div>
+        </div>
+    </div>
+	<div className="form-group row">
+        <label for="" className="col-sm-3 col-form-label">Input Audio codec/bitrate and resolution:</label>
+        <div className="col-sm-9">
+            <div className="row">
+            <div className="col-md-3">
+            <input type="title" className="form-control" id="title" placeholder="Codec">
+        </div>
+		<div className="col-md-3">
+            <input type="title" className="form-control" id="title" placeholder="Bitrate">
+        </div>
+		<div className="col-md-3">
+            <input type="title" className="form-control" id="title" placeholder="Resolution">
+        </div>
+		</div>
+        </div>
+    </div>
+		<div className="form-group row">
+        <label for="" className="col-sm-3 col-form-label">Output Video codec/bitrate and resolution:</label>
+        <div className="col-sm-9">
+		<div className="row">
+            <div className="col-md-3">
+            <input type="title" className="form-control" id="title" placeholder="Codec" value="h264">
+        </div>
+		<div className="col-md-3">
+            <input type="title" className="form-control" id="title" placeholder="Bitrate">
+        </div>
+		<div className="col-md-3">
+            <input type="title" className="form-control" id="title" placeholder="Resolution">
+        </div>
+		</div>
+        </div>
+    </div>
+		<div className="form-group row">
+        <label for="" className="col-sm-3 col-form-label">Output Video GOP:</label>
+        <div className="col-sm-9">
+		<div className="row">
+            <div className="col-md-3">
+            <input type="title" className="form-control" id="title" placeholder="I-Frame interval" >
+        </div>
+		<div className="col-md-3">
+            <input type="title" className="form-control" id="title" placeholder="B-Frame Count">
+        </div>
+		<div className="col-md-3">
+            <input type="title" className="form-control" id="title" placeholder="">
+        </div>
+		</div>
+        </div>
+    </div>
+	<div className="form-group row">
+        <label for="" className="col-sm-3 col-form-label">Output Audio codec/bitrate and resolution:</label>
+        <div className="col-sm-9">
+            <div className="row">
+            <div className="col-md-3">
+            <input type="title" className="form-control" id="title" placeholder="Codec" value="aac">
+        </div>
+		<div className="col-md-3">
+            <input type="title" className="form-control" id="title" placeholder="Bitrate"  value="192k">
+        </div>
+		<div className="col-md-3">
+            <input type="title" className="form-control" id="title" placeholder="Resolution" value="dropdown with values 480p, 720p and 1080p">
+        </div>
+		</div>
+        </div>
+    </div>
+	<div className="form-group row">
+        <label for="" className="col-sm-3 col-form-label">Creation Date:</label>
+        <div className="col-md-3">
+        <div className="custom-file">  
+<div className="input-group" style={{"display": "flex"}}>
+  <input type="text" className="form-control" placeholder="Creation Date" aria-label="Creation Date" aria-describedby="basic-addon2">
+  <div className="input-group-append" style={{"height": "40px"}}>
+    <button className="btn btn-outline-secondary" type="button" ><i className="fa fa-calendar input-prefix"></i></button>
+  </div>
+</div>
+
+  </div>
+
+        </div>
+    </div>
+	<div className="form-group row">
+        <label for="" className="col-sm-3 col-form-label">Notes:</label>
+        <div className="col-sm-9">
+           <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+    </div>
+    <div className="form-group row">
+        <div className="col-md-12 text-right">
+            <button type="submit" className="btn btn-info">Submit</button>
+        </div>
+    </div>
+</form>
+                            </div>
+                        </div>
+                            </div>
+            </div>
+                 
+				 <div className="mb-5" style={{"color":"black"}}>
+
+1. When media type=stream, the input fields will be: Protocol (srt, udp, hls), srt mode, interface, ip address, port
+<br>
+2. When media type=local generated content, the file type dd will have values: video/audio test patterns, null PID transport stream files and digital signage.
+<br> if video, audio test patterns get selected, other fields will be disabled; new field for "duration" will show up for hours and minutes and seconds; these will be generated by gstreamer ; If null PID transport stream files is selected, then tbd. If digital signage is selected, then tbd
+<br>
+3. When any input file is saved, ts will be generated and these ts become the input to tsswitch whose output will be stream or recordings.
+<br>
+4. During the import media files need to be re-encoded to specified by the user resolution and framerate and re-muxed as Transport stream (.ts) files using gstreamer. When imported the media shall be converted to either h.264 video and aac audio with available resolution options for h.264 are 480p, 720p and 1080p, audio will always be stereo, 192k bitrate, 48kHz. Video bit-rate and GOP shall be specified by the user. GOP shall give the options to specify I-frame interval and B-frame count. 
+<br>
+5. After the file is converted to ts we shall run it through TSDuck in order to stuff it to constant bitrate, fix continuity errors, resync, restamp the pcr and make unified PSI/SI tables.
+
+</div>
+                 </div>
+				 </div>
