@@ -24,7 +24,9 @@ menus:
     - identifier: cv
       name: CV
       title: Download detailed CV
-      url: https://raviksb90-cmd.github.io/ravikumar/files/ravi_kumar_detailed_cv_portfolio.docx
+      # DOCX version:
+      # url: https://raviksb90-cmd.github.io/ravikumar/files/Ravi_Kumar_Detailed_CV_Portfolio.docx
+      url: https://raviksb90-cmd.github.io/ravikumar/files/Ravi_Kumar_Detailed_CV_Portfolio.pdf
       weight: 10
 
 params:
@@ -100,7 +102,9 @@ params:
     button:
       enable: true
       name: Download Detailed CV
-      url: https://raviksb90-cmd.github.io/ravikumar/files/ravi_kumar_detailed_cv_portfolio.docx
+      # DOCX version:
+      # url: https://raviksb90-cmd.github.io/ravikumar/files/Ravi_Kumar_Detailed_CV_Portfolio.docx
+      url: https://raviksb90-cmd.github.io/ravikumar/files/Ravi_Kumar_Detailed_CV_Portfolio.pdf
       download: true
       newPage: false
     socialLinks:
