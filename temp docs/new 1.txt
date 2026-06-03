@@ -1,7 +1,0 @@
-17085
-17090
-17091
-
-get changes checked from mangita
-
-And regarding ticker #17085 , I could not start it because the restaurant items are not appearing on restaurant page both for test and staging servers perhaps due to an error showing in the console

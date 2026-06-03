@@ -1,2 +1,0 @@
-install componet and try bring dynamic data on it.
-
