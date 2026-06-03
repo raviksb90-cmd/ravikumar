@@ -1,8 +1,9 @@
-baseURL: "/"
+baseURL: "https://raviksb90-cmd.github.io/ravikumar/"
 locale: "en-us"
 title: "Ravi Kumar | Full-Stack Web Developer"
 defaultContentLanguage: "en"
 enableRobotsTXT: true
+canonifyURLs: true
 
 outputs:
   home:
@@ -23,13 +24,13 @@ menus:
     - identifier: cv
       name: CV
       title: Download detailed CV
-      url: /files/ravi_kumar_detailed_cv_portfolio.docx
+      url: https://raviksb90-cmd.github.io/ravikumar/files/ravi_kumar_detailed_cv_portfolio.docx
       weight: 10
 
 params:
   title: "Ravi Kumar"
   description: "Full-stack web developer portfolio for Ravi Kumar."
-  favicon: "/fav.png"
+  favicon: "fav.png"
   useBootstrapCDN: false
   mathjax: false
   animate: true
@@ -92,14 +93,14 @@ params:
       Senior-level full-stack developer with 9+ years of experience across React.js, Next.js, Node.js, PHP/MySQL, MongoDB, Firebase, AWS, DigitalOcean, Google Cloud, and production desktop packaging.
 
       I build practical products end to end: responsive interfaces, REST APIs, database workflows, payment and communication integrations, admin portals, multilingual features, real-time systems, and release-ready desktop applications.
-    image: /images/ravi-kumar-headshot.jpg
+    image: images/ravi-kumar-headshot.jpg
     roundImage: false
     bottomImage:
       enable: true
     button:
       enable: true
       name: Download Detailed CV
-      url: /files/ravi_kumar_detailed_cv_portfolio.docx
+      url: https://raviksb90-cmd.github.io/ravikumar/files/ravi_kumar_detailed_cv_portfolio.docx
       download: true
       newPage: false
     socialLinks:
