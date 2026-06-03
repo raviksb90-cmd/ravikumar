@@ -1,0 +1,415 @@
+baseURL: "/"
+locale: "en-us"
+title: "Ravi Kumar | Full-Stack Web Developer"
+defaultContentLanguage: "en"
+enableRobotsTXT: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+pagination:
+  pagerSize: 6
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+menus:
+  main:
+    - identifier: cv
+      name: CV
+      title: Download detailed CV
+      url: /files/ravi_kumar_detailed_cv_portfolio.docx
+      weight: 10
+
+params:
+  title: "Ravi Kumar"
+  description: "Full-stack web developer portfolio for Ravi Kumar."
+  favicon: "/fav.png"
+  useBootstrapCDN: false
+  mathjax: false
+  animate: true
+  customCSS: true
+  copyright: "Ravi Kumar."
+
+  terms:
+    copyright: "All rights reserved."
+
+  theme:
+    defaultTheme: "light"
+
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.55
+    textAlign: left
+
+  color:
+    textColor: "#1e293b"
+    secondaryTextColor: "#475569"
+    textLinkColor: "#0f766e"
+    backgroundColor: "#f8fafc"
+    secondaryBackgroundColor: "#e0f2fe"
+    primaryColor: "#0f766e"
+    secondaryColor: "#ffffff"
+    darkmode:
+      textColor: "#e5e7eb"
+      secondaryTextColor: "#cbd5e1"
+      textLinkColor: "#67e8f9"
+      backgroundColor: "#0b1120"
+      secondaryBackgroundColor: "#111827"
+      primaryColor: "#38bdf8"
+      secondaryColor: "#1f2937"
+
+  navbar:
+    brandName: "Ravi Kumar"
+    showBrandLogo: true
+    disableSearch: true
+    align: ms-auto
+    enableSeparator: false
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableCertifications: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  hero:
+    enable: true
+    intro: "Hi, I am"
+    title: "Ravi Kumar."
+    subtitle: "Full-stack web developer building SaaS, MERN products, AI apps, and Electron tools."
+    content: |-
+      Senior-level full-stack developer with 9+ years of experience across React.js, Next.js, Node.js, PHP/MySQL, MongoDB, Firebase, AWS, DigitalOcean, Google Cloud, and production desktop packaging.
+
+      I build practical products end to end: responsive interfaces, REST APIs, database workflows, payment and communication integrations, admin portals, multilingual features, real-time systems, and release-ready desktop applications.
+    image: /images/ravi-kumar-headshot.jpg
+    roundImage: false
+    bottomImage:
+      enable: true
+    button:
+      enable: true
+      name: Download Detailed CV
+      url: /files/ravi_kumar_detailed_cv_portfolio.docx
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fa-solid fa-envelope
+          url: mailto:raviksb90@gmail.com
+        - icon: fa-solid fa-briefcase
+          url: "#projects"
+
+  about:
+    enable: true
+    title: "Profile"
+    image: ""
+    content: |-
+      I am a full-stack web developer based in Una, Himachal Pradesh, India. My work spans SaaS platforms, admin systems, restaurant and clinic tools, school-management modules, survey products, booking systems, real-time applications, payment-enabled products, and Electron desktop/kiosk applications.
+
+      I am strongest in roles that need practical end-to-end delivery: translating requirements into product features, building interfaces and APIs, integrating third-party systems, stabilizing production workflows, and improving existing applications across modern JavaScript and legacy PHP/MVC stacks.
+    skills:
+      enable: true
+      title: "Current technical strengths:"
+      items:
+        - "Frontend: React.js, Next.js, Redux, React Native, Angular, Vue.js, Tailwind CSS, Bootstrap, Material UI, HTML5, CSS3, JavaScript"
+        - "Backend: Node.js, Express.js, PHP, Laravel, YII, Slim, CodeIgniter, REST APIs"
+        - "Databases and cloud: MySQL, MongoDB, PostgreSQL, Firebase, AWS, DigitalOcean, Google Cloud"
+        - "Integrations: Stripe, PayPal, Authorize.Net, QuickBooks, Dropbox, Gmail API, Twilio, SendGrid, SSO"
+        - "Desktop and real-time: Electron.js, WebRTC, Socket.io, Linux ARM builds, Windows builds, electron-builder"
+        - "AI and productivity: OpenAI API, Segmind API, Cursor, Claude, OpenAI/ChatGPT, AI-assisted coding, debugging, refactoring, documentation, and implementation planning"
+
+  experience:
+    enable: true
+    title: "Experience"
+    items:
+      - company: "76East Technologies"
+        companyUrl: ""
+        jobs:
+          - name: "Web Developer"
+            date: "Dec 2018 - Present"
+            content: |-
+              7.5 years of full-stack product delivery across SaaS platforms, real-time apps, admin systems, restaurant/clinic/school tools, survey products, booking systems, and desktop automation applications.
+
+              - Take features from requirement clarification through UI implementation, API/database workflows, integrations, release support, and production fixes.
+              - Develop responsive interfaces, REST APIs, authentication flows, admin panels, payment flows, and third-party integrations.
+              - Implement Stripe, PayPal, Authorize.Net, QuickBooks, Dropbox, Gmail API, Twilio, SendGrid, SSO, Firebase, and cloud-hosted workflows.
+              - Build multilingual product experiences, scheduling flows, QR ordering tools, role-based dashboards, and Electron desktop/kiosk deployments.
+              - Support client-facing discovery and business-development conversations when needed, translating requirements into delivery tasks.
+
+      - company: "Aquilis Web Solutions"
+        companyUrl: ""
+        jobs:
+          - name: "Web Developer"
+            date: "Apr 2017 - Nov 2018"
+            content: |-
+              1 year 8 months building PHP, MySQL, JavaScript, and REST API features for EasyMobileRecharge.com.
+
+              - Developed recharge/top-up workflows for mobile and TV subscriptions.
+              - Implemented UI upgrades, functionality fixes, MySQL-backed data flows, and Android API integration support.
+              - Worked across backend API development, JavaScript UI updates, and production support.
+
+  education:
+    enable: true
+    title: "Education"
+    index: true
+    items:
+      - title: "B.Tech, Computer Science"
+        school:
+          name: "Himachal Pradesh University"
+          url: ""
+        date: "2009 - 2013"
+        content: "Computer Science undergraduate degree."
+
+      - title: "12th, Science - Non-Medical"
+        school:
+          name: "BBNB Govt. Sr. Sec. School, Saloh, Una"
+          url: ""
+        date: "2009"
+        content: "HPBOSE | Marks: 334/500"
+
+      - title: "10th"
+        school:
+          name: "Govt. High School, Badhera, Distt Una"
+          url: ""
+        date: "2006"
+        content: "HPBOSE | Marks: 447/700"
+
+  certifications:
+    enable: true
+    title: "Certifications"
+    items:
+      - title: "Web Development (PHP & MySQL)"
+        issuer: "WebtechLearning Web Development Education Academy, Chandigarh"
+        date: "Professional Certification"
+        content: "Certification focused on PHP, MySQL, and practical web-development fundamentals."
+
+  projects:
+    enable: true
+    title: "Project Portfolio"
+    hideImages: true
+    items:
+      - title: "Loompin.com"
+        content: "Survey creation and distribution SaaS with import/export workflows, multilingual templates, scheduling, admin portal functionality, Stripe billing, AWS support, SSO, and AI chat integration."
+        featured:
+          name: Visit
+          link: https://loompin.com
+        badges:
+          - MERN
+          - Stripe
+          - AWS
+          - SSO
+          - AI
+
+      - title: "Lockerize"
+        content: "Smart locker kiosk platform built with Electron, React, Node.js, IPC-driven architecture, hardware interaction workflows, offline-safe behavior, Authorize.Net payments, and Linux ARM/Windows builds."
+        badges:
+          - Electron
+          - React
+          - Node.js
+          - Authorize.Net
+
+      - title: "AxxonLabs Report Automation"
+        content: "Electron + React desktop application that processes Excel and image inputs into analysis, structured insights, report previews, and multi-page PDF reports packaged through electron-builder."
+        badges:
+          - Electron
+          - React
+          - Node.js
+          - PDF
+
+      - title: "Studiio.au"
+        content: "Photography studio management platform with booking workflows, photo sharing, multi-role administration, QuickBooks integration, Dropbox integration, UI, backend, and database-backed flows."
+        featured:
+          name: Visit
+          link: https://studiio.au
+        badges:
+          - React
+          - Node.js
+          - MySQL
+          - QuickBooks
+          - Dropbox
+
+      - title: "Platerate.com"
+        content: "Online food ordering and rating platform improved across Next.js UI, Node.js-supported workflows, ordering, rating, and user-facing platform experiences."
+        featured:
+          name: Visit
+          link: https://platerate.com
+        badges:
+          - Next.js
+          - Node.js
+
+      - title: "AllMenu.eu"
+        content: "Multilingual QR restaurant menu system with QR-code menu access, QR ordering functionality, restaurant-facing menu management, customer ordering experiences, and DigitalOcean-hosted MERN workflows."
+        featured:
+          name: Visit
+          link: https://allmenu.eu
+        badges:
+          - MERN
+          - DigitalOcean
+          - QR Ordering
+
+      - title: "Memorygram"
+        content: "Collaborative story publishing platform with writing tools, Froala editor integration, multi-user content workflows, React.js frontend, Node.js backend, and MySQL-backed data flows."
+        featured:
+          name: Visit
+          link: https://memorygram.com
+        badges:
+          - React
+          - Node.js
+          - MySQL
+          - Froala
+
+      - title: "LovestrongMarriage"
+        content: "Church retreat management product with event creation, participant management, administrative tracking workflows, React.js frontend, Node.js backend, and MySQL product surfaces."
+        featured:
+          name: Visit
+          link: https://lovestrongmarriage.com
+        badges:
+          - React
+          - Node.js
+          - MySQL
+
+      - title: "Edvantum.com"
+        content: "School-management modules for class, bus, and subject management, with UI and backend-supported workflows for organizing educational administration data."
+        featured:
+          name: Visit
+          link: https://edvantum.com
+        badges:
+          - React
+          - Node.js
+
+      - title: "Chat App Prototype"
+        content: "Real-time chat application with text and video communication options, Socket.io messaging behavior, WebRTC video chat workflows, React.js frontend, Node.js backend, and MongoDB data flows."
+        featured:
+          name: Visit
+          link: http://66.235.194.119:6974/chat-app/
+        badges:
+          - React
+          - Node.js
+          - MongoDB
+          - WebRTC
+          - Socket.io
+
+      - title: "OpenAI API Chatbot"
+        content: "Education-guidance chatbot using the OpenAI API for personalized responses, tailored to help Indian students choose education paths after 10th grade."
+        featured:
+          name: Visit
+          link: http://66.235.194.119:6974/ai-app/chat
+        badges:
+          - React
+          - Node.js
+          - OpenAI API
+          - AI
+
+      - title: "Text to Image Generator"
+        content: "React.js application that sends text prompts through a Node.js workflow and uses the Segmind API to generate creative visual outputs from text descriptions."
+        featured:
+          name: Visit
+          link: http://66.235.194.119:6974/ai-app/image-generation
+        badges:
+          - React
+          - Node.js
+          - Segmind API
+          - AI
+
+      - title: "Chaukidar App"
+        content: "Electron desktop application for directory and file monitoring, with a React-based monitoring UI and Node.js system/file interaction workflows."
+        badges:
+          - Electron
+          - React
+          - Node.js
+
+      - title: "Banknews.tv"
+        content: "Financial news, analytics, and research platform with PHP/MySQL backend features, HTML/JavaScript frontend features, subscriptions, news aggregation, analytics, data visualization, and charts."
+        featured:
+          name: Visit
+          link: https://banknews.tv
+        badges:
+          - PHP
+          - MySQL
+          - JavaScript
+
+      - title: "Pogo.pro"
+        content: "Homeowner and professional quote platform with workflows for quote exchange, project management, collaboration, PHP/MySQL backend logic, and HTML/JavaScript/CSS frontend implementation."
+        featured:
+          name: Visit
+          link: https://pogo.pro
+        badges:
+          - PHP
+          - MySQL
+          - JavaScript
+          - CSS
+
+      - title: "BeHappyful Chrome Extension"
+        content: "Chrome extension for adding daily quotes as Gmail signatures, with settings controls and Gmail-related workflows using HTML, CSS, JavaScript, and Google Apps Script."
+        badges:
+          - Chrome Extension
+          - JavaScript
+          - Google Apps Script
+
+      - title: "Travel Smart"
+        content: "Collaborative trip-planning application with real-time collaboration, interactive maps, offline access workflows, and Firebase authentication, storage, and database behavior."
+        badges:
+          - Firebase
+          - Maps
+          - Offline
+
+      - title: "Popular Maternity Centre"
+        content: "Online clinic portal with appointment booking, admin workflows, payment gateway support, SMS API integration, Node.js backend features, and Angular frontend features."
+        featured:
+          name: Visit
+          link: https://popularmaternitycentre.com
+        badges:
+          - Node.js
+          - Angular
+          - Payments
+          - SMS API
+
+      - title: "EasyMobileRecharge.com"
+        content: "Online recharge/top-up platform with UI upgrades, feature improvements, Android app APIs, mobile recharge, TV subscriptions, PHP/MySQL backend work, JavaScript, and REST API support."
+        featured:
+          name: Visit
+          link: https://easymobilerecharge.com
+        badges:
+          - PHP
+          - MySQL
+          - JavaScript
+          - REST APIs
+
+  achievements:
+    enable: true
+    title: "Strengths"
+    hideImages: true
+    items:
+      - title: "End-to-End Delivery"
+        content: "Turns requirements into interfaces, APIs, databases, integrations, release support, production fixes, and deployment-ready product features."
+      - title: "Integration-Heavy Products"
+        content: "Experienced with payments, email/SMS, SSO, accounting, document/file services, Firebase, and role-based product workflows."
+      - title: "Desktop and Kiosk Apps"
+        content: "Builds Electron applications with IPC architecture, hardware-adjacent flows, offline-safe behavior, Linux ARM/Windows packaging, and report automation."
+      - title: "Modern AI Productivity"
+        content: "Uses Cursor, Claude, OpenAI/ChatGPT, OpenAI API, and Segmind API for implementation planning, debugging, refactoring, documentation, and AI-backed application features."
+
+  contact:
+    enable: true
+    title: "Contact"
+    content: |-
+      Available for full-stack web development roles, MERN/React product work, SaaS features, integration-heavy applications, and Electron desktop tooling.
+    email: raviksb90@gmail.com
+    btnName: Email Ravi
+    formspree:
+      enable: false
+
+  footer:
+    recentPosts:
+      enable: false
+    socialNetworks: {}
